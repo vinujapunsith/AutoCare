@@ -1,0 +1,55 @@
+                                                                                       
+.ac-welcome{
+  position:relative;isolation:isolate;display:grid;grid-template-rows:auto minmax(0,1fr) auto;
+  min-height:100vh;min-height:100svh;overflow:hidden;background:#06111e;color:#f4f8fc;
+}
+.ac-welcome-background{
+  position:absolute;inset:0;z-index:-1;
+  background-image:linear-gradient(90deg,rgba(3,10,19,.88) 0%,rgba(4,13,25,.62) 48%,rgba(3,10,19,.42) 100%),linear-gradient(180deg,rgba(3,10,19,.38),rgba(3,10,19,.66)),url('/assets/autocare-background.jpg');
+  background-size:cover;background-position:center center;background-repeat:no-repeat;
+}
+.ac-welcome-header{position:relative;z-index:1;display:flex;align-items:center;padding:26px clamp(20px,5vw,76px) 8px}
+.ac-welcome-brand{display:flex;align-items:center;gap:13px}
+.ac-welcome-brand>span{width:52px;height:52px;flex:0 0 52px;border-radius:14px;background:linear-gradient(135deg,rgba(20,128,255,.18),rgba(4,18,34,.3)),url('/assets/autocare-logo-new.jpg') center/cover;border:1px solid rgba(145,202,255,.48);box-shadow:0 8px 26px rgba(0,0,0,.25),0 0 24px rgba(24,132,255,.16)}
+.ac-welcome-brand b{display:block;font-size:25px;line-height:1.1;letter-spacing:-.7px;color:#fff}
+.ac-welcome-brand small{display:block;font-size:10px;letter-spacing:1.05px;color:#c3d0df;margin-top:5px}
+.ac-welcome-content{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:100%;padding:24px clamp(20px,7vw,110px) 38px;text-align:center}
+.ac-welcome-copy{max-width:760px;width:100%;margin:0 auto}
+.ac-welcome-eyebrow{display:block;color:#b9d5f3;font-size:12px;font-weight:750;letter-spacing:2.1px;line-height:1.6}
+.ac-welcome-copy h1{margin:18px 0 16px;color:#f8fbff;font-size:clamp(42px,5.2vw,74px);line-height:1.04;letter-spacing:-2.5px}
+.ac-welcome-copy h1 em{font-style:normal;color:#3295ff}
+.ac-welcome-copy p{max-width:550px;margin:0 auto;color:#c0cddd;font-size:17px;line-height:1.75}
+.ac-welcome-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;margin-top:28px;padding:0 24px;border:1px solid rgba(108,181,255,.35);border-radius:11px;background:linear-gradient(110deg,#1684ff,#2878f3);color:#fff;font-size:15px;font-weight:750;box-shadow:0 10px 28px rgba(19,112,239,.3);transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}
+.ac-welcome-cta span{font-size:21px;line-height:1}
+.ac-welcome-cta:hover{transform:translateY(-2px);filter:brightness(1.07);box-shadow:0 14px 32px rgba(19,112,239,.4)}
+.ac-welcome-cta:focus-visible{outline:3px solid rgba(94,177,255,.7);outline-offset:3px}
+.ac-welcome-features{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(10px,2vw,30px);padding:12px clamp(20px,5vw,76px) 28px;border-top:1px solid rgba(180,210,242,.12);background:rgba(3,10,19,.28)}
+.ac-welcome-feature{display:flex;align-items:center;gap:12px;min-width:0;color:#e2ebf7}
+.ac-welcome-feature>span{width:43px;height:43px;flex:0 0 43px;display:grid;place-items:center;border:1px solid rgba(70,151,241,.18);border-radius:12px;background:rgba(24,115,205,.16);color:#55a8ff;font-size:23px}
+.ac-welcome-feature b{display:block;font-size:12px;font-weight:700;white-space:nowrap}
+.ac-welcome-feature small{display:block;margin-top:5px;color:#a5b7cc;font-size:11px;line-height:1.35}
+@media(max-width:900px){
+  .ac-welcome-content{padding:24px 36px 32px}
+  .ac-welcome-features{padding:12px 26px 22px;gap:12px}
+  .ac-welcome-feature{gap:8px}.ac-welcome-feature>span{width:36px;height:36px;flex-basis:36px;font-size:20px}
+  .ac-welcome-feature b{font-size:11px}.ac-welcome-feature small{font-size:10px}
+}
+@media(max-width:680px){
+  .ac-welcome{grid-template-rows:auto minmax(0,1fr) auto}
+  .ac-welcome-background{background-image:linear-gradient(90deg,rgba(3,10,19,.82),rgba(3,10,19,.62)),linear-gradient(180deg,rgba(3,10,19,.3),rgba(3,10,19,.75)),url('/assets/autocare-background.jpg');background-position:center center}
+  .ac-welcome-header{padding:18px 18px 8px}
+  .ac-welcome-brand{gap:10px}.ac-welcome-brand>span{width:43px;height:43px;flex-basis:43px;border-radius:11px}
+  .ac-welcome-brand b{font-size:22px}.ac-welcome-brand small{font-size:8px;letter-spacing:.7px}
+  .ac-welcome-content{padding:20px 22px 30px;align-items:center}
+  .ac-welcome-eyebrow{font-size:9px;letter-spacing:1.25px}
+  .ac-welcome-copy h1{font-size:clamp(38px,10vw,54px);letter-spacing:-1.6px;margin:14px 0}
+  .ac-welcome-copy p{font-size:14px;line-height:1.65}
+  .ac-welcome-cta{margin-top:22px;min-height:48px;padding:0 18px;font-size:14px}
+  .ac-welcome-features{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;padding:12px 18px 18px}
+  .ac-welcome-feature>span{width:32px;height:32px;flex-basis:32px;border-radius:9px;font-size:18px}
+  .ac-welcome-feature b{font-size:10px;white-space:normal}.ac-welcome-feature small{font-size:9px;margin-top:3px}
+}
+
+                                                                                       
+.ac-hero{background-size:cover!important;background-position:center center!important}
+@media(max-width:680px){.ac-hero{background-size:cover!important;background-position:center center!important}}
